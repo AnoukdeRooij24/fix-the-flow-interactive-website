@@ -1,0 +1,148 @@
+/* GRID */
+body {
+    display: grid;
+    /* grid-template-columns:1fr min-content 1fr; */
+    margin-inline: auto;
+
+    gap: 10px;
+
+    padding: 0;
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+header { 
+    background-image: url(assets/header-overons.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--text-color-white);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1em;
+    position: relative;
+    margin: 0px;
+}
+
+/* HEADER GRADIENT */
+.gradient {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* LIJST NAV BAR */
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* LINKS NAV BAR */
+a {
+    text-decoration: none;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+    cursor: pointer;
+    position: relative;
+ }
+
+/* LINKS NAV BAR ON HOVER */
+a:hover {
+    color: var(--section-color-4);
+}
+
+
+/* TEKST */
+h1{
+    font-family: var(--font-text-bold);
+    color: var(--text-color-1);
+    font-size: var(--font-size-X-large);
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    text-align: left;
+    font-family: var(--font-text-bold);
+    color: var(--text-color-1);
+    font-size: var(--font-size-X-large);
+    font-weight: bold;
+}
+
+
+/* SECTIONS */
+.overbiebibbloei {
+    background-color: var(--section-color-5);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
+
+.partners {
+    background-color: var(--section-color-3);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
+
+.contact {
+    background-color: var(--section-color-4);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
+
+.maps {
+    border-radius: var(--radius-card);
+    outline-color: var(--section-color-3);
+    outline-width: 2em;
+    justify-content: right;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--section-color-2);
+    color: var( --text-color-5);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
+
+.adres {
+    text-align: center;
+    justify-self: center;
+}
+
+.contactgegevens {
+    text-align: center;
+    justify-self: center;
+}
+
+.samenwerken {
+    text-align: center;
+    justify-self: center;
+}
