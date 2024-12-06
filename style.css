@@ -83,7 +83,7 @@ h2 {
     text-align: left;
     font-family: var(--font-text-bold);
     color: var(--text-color-1);
-    font-size: var(--font-size-X-large);
+    font-size: var(--font-size-large);
     font-weight: bold;
 }
 
@@ -96,6 +96,15 @@ h2 {
     color: var( --text-color-1);
     font-size: var(--font-size-medium);
     font-family: var(--font-text-bold);
+}
+
+.zorgvoorharry {
+    background-color: var(--section-color-2);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-4);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);   
 }
 
 .partners {
@@ -116,6 +125,19 @@ h2 {
     font-family: var(--font-text-bold);
 }
 
+/* BUTTON LAAT HERRY GROEIEN */
+.groeispurt {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* GOOGLE MAPS INPUT */
 .maps {
     border-radius: var(--radius-card);
     outline-color: var(--section-color-3);
