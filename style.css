@@ -3,7 +3,6 @@ body {
     display: grid;
     /* grid-template-columns:1fr min-content 1fr; */
     margin-inline: auto;
-
     gap: 10px;
 
     padding: 0;
@@ -125,8 +124,60 @@ h2 {
     font-family: var(--font-text-bold);
 }
 
-/* BUTTON LAAT HERRY GROEIEN */
-.groeispurt {
+/* BUTTON LAAT HARRY GROEIEN */
+/* Container to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 15%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .groeispurt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+
+    + svg {
+        pointer-events: none;
+        transition: transform .45s ease-out;
+    }
+  }
+  
+
+  .container .groeispurt:hover + svg {
+    transform: scale(1.2);
+  }
+
+
+.harrygroeien {
+    animation-name: groeienvanharry;
+    animation-duration: 1s;
+
+}
+
+@keyframes groeienvanharry {
+    0%      {transform: scale(0);}
+    100%    {transform: scale(2);}
+}
+
+
+/* .groeispurt {
     background-color: #04AA6D;
     border: none;
     color: white;
@@ -135,7 +186,8 @@ h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+  } */
+
 
 /* GOOGLE MAPS INPUT */
 .maps {
