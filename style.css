@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 10px; 
     box-sizing: border-box;
+    height: 100%;
 }
 
 
@@ -22,13 +23,13 @@ header {
     background-attachment: fixed;
     padding: 1em;
     position: relative;
-    margin: 0px;
+    margin: 0%;
 }
 
 /* HEADER GRADIENT */
 .gradient {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-    height: 100%;
+    height: 60%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -88,6 +89,10 @@ h2 {
 
 
 /* SECTIONS */
+section {
+    margin: 1%;
+}
+
 .overbiebibbloei {
     background-color: var(--section-color-5);
     border-radius: var(--radius-card);
@@ -103,26 +108,10 @@ h2 {
     padding: 1%;
     color: var( --text-color-4);
     font-size: var(--font-size-medium);
-    font-family: var(--font-text-bold);   
+    font-family: var(--font-text-bold);  
+    position: relative;
 }
 
-.partners {
-    background-color: var(--section-color-3);
-    border-radius: var(--radius-card);
-    padding: 1%;
-    color: var( --text-color-1);
-    font-size: var(--font-size-medium);
-    font-family: var(--font-text-bold);
-}
-
-.contact {
-    background-color: var(--section-color-4);
-    border-radius: var(--radius-card);
-    padding: 1%;
-    color: var( --text-color-1);
-    font-size: var(--font-size-medium);
-    font-family: var(--font-text-bold);
-}
 
 /* BUTTON LAAT HARRY GROEIEN */
 /* Container to position the button. Adjust the width as needed */
@@ -130,6 +119,10 @@ h2 {
     position: relative;
     width: 15%;
   }
+
+.harrysvg{
+    z-index: 1;
+}
   
   /* Make the image responsive */
   .container img {
@@ -150,7 +143,6 @@ h2 {
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
     z-index: 1;
 
     + svg {
@@ -160,34 +152,64 @@ h2 {
   }
   
 
+/* Wolk groeit iets op n hover */
   .container .groeispurt:hover + svg {
     transform: scale(1.2);
   }
 
 
+/* Animatie Harry groeit */
 .harrygroeien {
     animation-name: groeienvanharry;
     animation-duration: 1s;
-
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: ease-in-out;
 }
 
 @keyframes groeienvanharry {
     0%      {transform: scale(0);}
-    100%    {transform: scale(2);}
+    100%    {transform: scale(2);  transform-origin: bottom left;}
 }
 
 
-/* .groeispurt {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  } */
+/* Animatie wolk naar rechts */
+.wolkrechts {
+    animation-name: wolkschuif;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+@keyframes wolkschuif {
+    0%      {transform: translateX(0em);}
+    100%    {transform: translateX(8em);}
+}
+
+.zonnetje {
+    position: absolute;
+    top: 14em;
+    left: 5em; 
+}
+
+
+.partners {
+    background-color: var(--section-color-3);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
+
+.contact {
+    background-color: var(--section-color-4);
+    border-radius: var(--radius-card);
+    padding: 1%;
+    color: var( --text-color-1);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-text-bold);
+}
 
 /* GOOGLE MAPS INPUT */
 .maps {
