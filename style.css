@@ -87,6 +87,10 @@ h2 {
     font-weight: bold;
 }
 
+p {
+    max-width: 80ch;
+}
+
 
 /* SECTIONS */
 section {
@@ -100,7 +104,10 @@ section {
     color: var( --text-color-1);
     font-size: var(--font-size-medium);
     font-family: var(--font-text-bold);
+    /* max-width: 70ch; */
 }
+
+
 
 .zorgvoorharry {
     background-color: var(--section-color-2);
@@ -118,6 +125,7 @@ section {
 .container {
     position: relative;
     width: 15%;
+    z-index: 1;
   }
 
 .harrysvg{
@@ -183,13 +191,14 @@ section {
 
 @keyframes wolkschuif {
     0%      {transform: translateX(0em);}
-    100%    {transform: translateX(8em);}
+    100%    {transform: translateX(10vw);}
 }
 
 .zonnetje {
     position: absolute;
     top: 14em;
     left: 5em; 
+    z-index: 0;
 }
 
 
