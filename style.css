@@ -23,7 +23,7 @@ header {
     background-attachment: fixed;
     padding: 1em;
     position: relative;
-    margin: 0%;
+    margin-top: 0%;
 }
 
 /* HEADER GRADIENT */
@@ -89,6 +89,7 @@ h2 {
 
 p {
     max-width: 80ch;
+    margin-left: 1%;
 }
 
 
@@ -170,13 +171,13 @@ section {
 .harrygroeien {
     animation-name: groeienvanharry;
     animation-duration: 1s;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: ease-in-out;
+    animation-delay: 0.3s;
 }
 
 @keyframes groeienvanharry {
-    0%      {transform: scale(0);}
+    0%      {transform: scale();}
     100%    {transform: scale(2);  transform-origin: bottom left;}
 }
 
