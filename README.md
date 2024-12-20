@@ -3,7 +3,7 @@
 
 De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/INSTRUCTIONS.md) -->
 
-# Bieb in Bloei sprint 5
+# [Bieb in Bloei sprint 5](https://anoukderooij24.github.io/fix-the-flow-interactive-website/)
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Tijdens sprint 5 ben ik aan het werk gegaan met interacties met JavaScript. Als onderdeel hiervan heb ik een interactie met Harry gemaakt. Je kan hem laten groeien als het zonnetje gaat schijnen.
 
